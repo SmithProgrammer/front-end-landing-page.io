@@ -1,0 +1,228 @@
+.site-footer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 130px;
+	position: relative;
+	z-index: 10;
+	align-items: center;
+
+	.line-bg-top {
+	    position: absolute;
+	    top: -294px;
+	    left: 0px;
+	    right: 0;
+	    width: 100vw;
+	    height: 363px;
+	    z-index: 5;
+	}
+
+	.line-bg-bottom {
+	    position: absolute;
+	    top: -98px;
+	    left: 0px;
+	    right: 0;
+	    width: 100vw;
+	    height: 363px;
+	    z-index: 5;
+	}
+
+	.row-1 {
+		display: flex;
+		gap: 100px;
+		margin-bottom: 79px;
+
+		.site-logo {
+			width: 185px;
+			height: 187px;
+			position: relative;
+			z-index: 10;
+		}
+
+		.site-footer__nav-block {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+
+			a{
+				color: #FFF;
+				font-family: Montserrat, sans-serif;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				position: relative;
+				z-index: 10;
+
+				&:hover {
+					color: #8176AF;
+					transition: all 0.3s ease-in-out;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.site-footer__line{
+			height: 169px;
+			width: 3px;
+    		background-image: linear-gradient(176deg, hsl(251, 18%, 23%) 0%, hsl(252, 15%, 38%) 9%, hsl(251, 15%, 53%) 18%, hsl(251, 28%, 70%) 27%, hsl(251, 47%, 79%) 36%, hsl(251, 37%, 73%) 45%, hsl(251, 31%, 66%) 55%, hsl(252, 27%, 60%) 64%, hsl(251, 20%, 51%) 73%, hsl(251, 19%, 41%) 82%, hsl(251, 19%, 32%) 91%, hsl(251, 18%, 23%) 100%);
+		}	
+
+		.social-links-block{
+
+			.social-links-block__link {
+				color: #FFF;
+				font-family: Montserrat, sans-serif;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;	
+				border-radius: 1000px;
+
+			}
+
+			.button {
+				border-radius: 40px;
+				background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				flex-direction: column;
+				padding: 17px 43px;
+				position: relative;
+				z-index: 10;
+
+				span{
+					color: #343045;
+					font-family: Montserrat, sans-serif;
+					font-size: 12px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+
+				&:hover {
+					background: linear-gradient(347deg, #8176AF 0%, #C0B7E8 100%);
+					transition: all 1s ease-in-out;
+					cursor: pointer;
+				}
+			}
+
+		}	
+
+		.links-list{
+			display: flex;
+			gap: 20px;
+			margin-top: 39px;
+			margin-bottom: 40px;
+
+			img {
+				width: 32px;
+				height: 32px;
+				border-radius: 1000px;
+				position: relative;
+				z-index: 10;	
+
+				&:hover {
+					transition: all 0.1s ease-in-out;
+					border: 3px solid #0000004f;
+					border-radius: 1000px;
+					cursor: pointer;
+				}	
+			}
+		}
+	}
+
+	.footer-horizontal-line{
+		background-image: linear-gradient(
+		  270deg,
+		  hsl(251deg 18% 23%) 0%,
+		  hsl(252deg 15% 38%) 9%,
+		  hsl(251deg 15% 53%) 18%,
+		  hsl(251deg 28% 70%) 27%,
+		  hsl(251deg 47% 79%) 36%,
+		  hsl(251deg 37% 73%) 45%,
+		  hsl(251deg 31% 66%) 55%,
+		  hsl(252deg 27% 60%) 64%,
+		  hsl(251deg 20% 51%) 73%,
+		  hsl(251deg 19% 41%) 82%,
+		  hsl(251deg 19% 32%) 91%,
+		  hsl(251deg 18% 23%) 100%
+		);
+		width: 100%;
+		height: 1px;
+		margin-bottom: 49px;
+	}
+
+	.footer-desc {
+		p {
+			color: #FFF;
+			font-family: Montserrat, sans-serif;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 1.82px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.site-footer {
+		.row-1 {
+			.links-list{
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.site-footer {
+		.row-1 {
+			gap: 20px;
+			justify-content: center
+		}
+
+	}
+}
+
+@media screen and (max-width: 862px) {
+	.site-footer {
+		.row-1 {
+			.social-links-block {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+
+ 				.social-links-block__link {
+ 					text-align: center;
+ 				}
+			} 
+
+			.links-list{
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 804px) {
+	.site-footer {
+		.row-1 {
+			flex-direction: column;
+    		align-content: center;
+    		align-items: center;
+
+    		.site-footer__line {
+    			display: none;
+    		}
+
+    		.site-footer__nav-block {
+    			align-items: center;
+    			margin-bottom: 30px;
+    		}
+		}
+	}
+}

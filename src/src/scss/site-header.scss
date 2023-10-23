@@ -1,0 +1,128 @@
+.site-header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 98px;
+
+    .nav-icon {
+    	display: none;
+    }
+
+	.site-header_logos {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.site-header__top-nav .site-header__top-nav-list{
+		display: flex;
+		align-items: center;
+		gap: 42px;
+		position: relative;
+		z-index: 10;
+
+		a{
+			color: #FFF;
+			font-family: Montserrat, sans-serif;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+
+			&:hover {
+				color: #C0B7E8;
+				cursor: pointer;
+				transition: all 0.5s ease-in-out;
+			}
+		}
+	}
+
+	.site-header__buttons {
+		display: flex;
+		align-items: center;
+		gap: 38px;
+		transition: all 1s ease-out;
+
+		.site-header__button-contact {
+			display: block;
+			border-radius: 40px;
+			border: 2px solid #FFF;
+			padding: 10px 33px;
+			position: relative;
+			z-index: 10;
+
+			p {
+				color: #FFF;
+				font-family: Montserrat, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+
+			&:hover {
+				background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+				border: 2px solid #C0B7E8;
+				cursor: pointer;
+				transition: all 0.5s ease-in-out;
+			}
+		}
+
+		.site-header__button-join{
+			display: block;
+			border-radius: 40px;
+			background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+			padding: 10px 33px;
+			position: relative;
+			z-index: 10;
+
+			p {
+				color: #343045;
+				font-family: Montserrat, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+
+			&:hover {
+				background: #0000003d;
+				cursor: pointer;
+				transition: all 0.5s ease-in-out;
+			}
+
+			&:hover p{
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1028px) {
+	.site-header {
+		.site-header__top-nav  .site-header__top-nav-list{
+			display: none;
+		}		
+		
+		.nav-icon {
+	    	display: block;
+	    	width: 33px;
+			height: 26px;
+	    }
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.site-header {
+		.site-header__buttons{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 618px) {
+	.site-header {
+		margin-bottom: 48px;
+	}
+}
