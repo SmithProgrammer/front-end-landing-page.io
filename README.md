@@ -1,2 +1,2 @@
-# front-end-landing-page.io
+# web-programmer-pro.github.io
 Приклад мого коду на прикладі фронт-енд розробки односторінкового сайту.
