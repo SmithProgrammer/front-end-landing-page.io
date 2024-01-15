@@ -1,0 +1,26 @@
+.section-images {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 123px;
+	opacity: 0.36;
+	margin-top: 142px;
+
+	img {
+		width: 174px;
+		height: 174px;
+	}
+}
+@media screen and (max-width: 720px) {
+	.section-images{
+		flex-direction: row;
+	    align-items: center;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+
+   		img {
+   			width: 20vw;
+   			height: auto;
+   		}
+	}
+}
